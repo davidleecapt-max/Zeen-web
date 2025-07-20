@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn with Me - Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8f8f8, #e0e0e0);
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff9800;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    button {
+      background-color: #ff9800;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e68900;
+    }
+    .ad-space {
+      margin: 20px 0;
+      padding: 20px;
+      border: 2px dashed #ccc;
+      background: #fafafa;
+      border-radius: 8px;
+      font-style: italic;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Learn with Me</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Empower Your Learning Journey</h2>
+    <p>Explore our curated content and enhance your skills in tech, design, and more.</p>
+
+    <div class="ad-space">
+      <!-- Ad code goes here -->
+      [Your Ad Will Be Displayed Here]
+    </div>
+
+    <button onclick="showMessage()">Click to Learn a Tip</button>
+    <p id="tipMessage" style="margin-top: 20px; font-style: italic;"></p>
+  </main>
+
+  <footer>
+    &copy; 2025 Developer Dave and Sons ❤️📌 | All rights reserved.
+  </footer>
+
+  <script>
+    function showMessage() {
+      const tips = [
+        "Break your learning into small, consistent sessions.",
+        "Use active recall to strengthen memory.",
+        "Teach someone else to test your understanding.",
+        "Practice makes progress — keep coding!",
+        "Stay curious and never stop learning."
+      ];
+      const randomTip = tips[Math.floor(Math.random() * tips.length)];
+      document.getElementById('tipMessage').textContent = randomTip;
+    }
+  </script>
+</body>
+</html>
